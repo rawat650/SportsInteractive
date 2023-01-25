@@ -21,7 +21,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/tv_collab_title"
+                android:id="@+id/tvSqua"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -35,7 +35,7 @@
 
 
         <View
-            android:id="@+id/viewcollab"
+            android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_columnWeight="1"
@@ -56,7 +56,7 @@
             android:weightSum="2"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/viewcollab">
+            app:layout_constraintTop_toBottomOf="@id/view">
 
             <TextView
                 android:id="@+id/tvTeam1"
@@ -95,7 +95,7 @@
             app:layout_constraintTop_toBottomOf="@id/llcollabTabs">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rcvtome"
+                android:id="@+id/rcvTeamOne"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -104,7 +104,7 @@
                 android:visibility="visible" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rcvforothers"
+                android:id="@+id/rcvTeamTwo"
                 tools:itemCount="11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

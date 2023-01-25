@@ -56,7 +56,7 @@ class MatchAdapter(context: Context, val list: List<MatchDetailsData>, val click
                 ).Overs + " ) "
 
             binding.tvResult.text = matchData.Matchdetail?.Result
-            binding.tvPalyerMatch.text = matchData.Matchdetail?.PlayerMatch
+            binding.tvPlayerOfTheMatch.text = matchData.Matchdetail?.PlayerMatch
             binding.tvStatus.text = matchData.Matchdetail?.Status
 
 

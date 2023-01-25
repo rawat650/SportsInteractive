@@ -2,10 +2,13 @@ package com.example.sportsinteractive
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sportsinteractive.adapter.MatchDetailAdapter
 import com.example.sportsinteractive.databinding.ActivityDetailBinding
+import com.example.sportsinteractive.databinding.CustomAlertDialogBinding
 import com.example.sportsinteractive.pojo.PlayerDetail
+import com.example.sportsinteractive.pojo.Players
 import com.example.sportsinteractive.pojo.Teams
 import com.example.sportsinteractive.utils.Utils
 import com.google.gson.Gson
@@ -23,6 +26,7 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val teamsData = intent.extras?.getSerializable("name") as Teams
+
 
 
         var pakPlayerData: Map<String, PlayerDetail>? = null
@@ -46,13 +50,13 @@ class DetailActivity : AppCompatActivity() {
             }
             binding.tvTeam1.text = teamsData.pak?.NameFull
             binding.tvTeam2.text = teamsData.south_africa?.NameFull
-            binding.rcvtome.apply {
+            binding.rcvTeamOne.apply {
                 this.layoutManager =
                     LinearLayoutManager(this@DetailActivity, LinearLayoutManager.VERTICAL, false)
                 this.adapter = MatchDetailAdapter(this@DetailActivity, pakPlayerDetailList)
             }
 
-            binding.rcvforothers.apply {
+            binding.rcvTeamTwo.apply {
                 this.layoutManager =
                     LinearLayoutManager(this@DetailActivity, LinearLayoutManager.VERTICAL, false)
                 this.adapter = MatchDetailAdapter(this@DetailActivity, saPlayerDetailList)
@@ -68,13 +72,13 @@ class DetailActivity : AppCompatActivity() {
             }
             binding.tvTeam1.text = teamsData.ind?.NameFull
             binding.tvTeam2.text = teamsData.nz?.NameFull
-            binding.rcvtome.apply {
+            binding.rcvTeamOne.apply {
                 this.layoutManager =
                     LinearLayoutManager(this@DetailActivity, LinearLayoutManager.VERTICAL, false)
                 this.adapter = MatchDetailAdapter(this@DetailActivity, indPlayerDetailList)
             }
 
-            binding.rcvforothers.apply {
+            binding.rcvTeamTwo.apply {
                 this.layoutManager =
                     LinearLayoutManager(this@DetailActivity, LinearLayoutManager.VERTICAL, false)
                 this.adapter = MatchDetailAdapter(this@DetailActivity, nzPlayerDetailList)
