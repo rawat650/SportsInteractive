@@ -23,11 +23,6 @@ class DetailActivity : AppCompatActivity() {
         setContentView(binding.root)
         val teamsData = intent.extras?.getSerializable("playerName") as Teams
 
-
-        /*val playerData = intent.extras?.getSerializable("playerName") as PlayerDetail
-        binding.dialogBox.name = playerData.NameFull
-        */
-
         val pakPlayerData = teamsData.pak?.Players
         val saPlayerData = teamsData.south_africa?.Player
         pakPlayerDetailList.clear()
