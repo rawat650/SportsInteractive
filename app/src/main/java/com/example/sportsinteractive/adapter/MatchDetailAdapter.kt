@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportsinteractive.databinding.ActivityDetailBinding
 import com.example.sportsinteractive.databinding.MatchDetailItemListBinding
@@ -35,6 +36,9 @@ class MatchDetailAdapter(val context: Context, val playerDetailData: MutableList
         val playerData = playerDetailData[position]
         holder.apply {
             binding.playerName.text = playerData.NameFull
+            binding.playerName.setOnClickListener {
+//                Toast(this@MatchDetailAdapter,"the player name is + ${playerData.NameFull}",Toast.LENGTH_LONG).show()
+            }
 
 
         }

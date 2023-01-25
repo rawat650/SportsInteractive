@@ -46,11 +46,11 @@ class MatchAdapter(context: Context, val list: List<MatchDetailsData>, val click
                 binding.tvMatch.text = matchData.Teams?.pak?.NameFull
                 binding.tvTeam.text = matchData.Teams?.south_africa?.NameFull
             }
-            binding.saPakScore.text =
+            binding.tvTeamOneScore.text =
                 matchData.Innings.get(1).Total + "/" + matchData.Innings.get(1).Wickets + " ( " + matchData.Innings.get(
                     0
                 ).Overs + " ) "
-            binding.tvPakScore.text =
+            binding.tvTeamTwoScore.text =
                 matchData.Innings.get(0).Total + "/" + matchData.Innings.get(0).Wickets + " ( " + matchData.Innings.get(
                     1
                 ).Overs + " ) "

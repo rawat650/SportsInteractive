@@ -53,7 +53,7 @@
             app:layout_constraintTop_toBottomOf="@id/tvMatch" />
 
         <TextView
-            android:id="@+id/tvPakScore"
+            android:id="@+id/tvTeamTwoScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -61,68 +61,24 @@
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/saPakScore"
+            app:layout_constraintStart_toStartOf="@+id/tvTeamOneScore"
             app:layout_constraintTop_toBottomOf="@id/tvMatch" />
 
         <TextView
-            android:id="@+id/saPakScore"
+            android:id="@+id/tvTeamOneScore"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="180dp"
             android:layout_marginTop="10dp"
-            android:text="23dkfdkj"
+            android:text="southArfrica"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintLeft_toRightOf="@id/tvMatch"
             app:layout_constraintTop_toBottomOf="@id/tvSeries" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/llTeamDateVenue"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvTeam"
-            android:orientation="horizontal"
-            android:weightSum="3">
 
-            <TextView
-                android:id="@+id/tvVenue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:text="kingsmead"
-                android:textColor="@color/black"
-                android:textSize="13sp"
-                android:textStyle="bold"
-                android:layout_weight="1" />
 
-            <TextView
-                android:id="@+id/tvTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="10dp"
-                android:text="kingsmead"
-                android:textColor="@color/black"
-                android:textSize="13dp"
-                android:layout_weight="1"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="23-3-2010"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="13sp"
-                android:textStyle="bold"/>
-        </LinearLayout>
-
-        <!--<TextView
+        <TextView
             android:id="@+id/tvVenue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -139,8 +95,8 @@
             android:id="@+id/tvTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
             android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
             android:text="kingsmead"
             android:textColor="@color/black"
             android:textSize="13dp"
@@ -157,8 +113,8 @@
             android:textColor="@color/black"
             android:textSize="13sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/tvPakScore"
-            app:layout_constraintTop_toBottomOf="@id/tvPakScore" />-->
+            app:layout_constraintStart_toStartOf="@+id/tvTeamTwoScore"
+            app:layout_constraintTop_toBottomOf="@id/tvTeamTwoScore" />
 
         <TextView
             android:id="@+id/tvResult"
@@ -171,7 +127,7 @@
             android:textSize="12dp"
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/llTeamDateVenue" />
+            app:layout_constraintTop_toBottomOf="@id/tvVenue" />
 
         <TextView
             android:id="@+id/tvPalyerMatch"
@@ -179,9 +135,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:text="andile"
             android:textColor="@color/black"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvResult" />
 
@@ -194,9 +152,8 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintLeft_toRightOf="@id/tvResult"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toBottomOf="@id/llTeamDateVenue" />
+            app:layout_constraintStart_toStartOf="@+id/tvDate"
+            app:layout_constraintTop_toBottomOf="@id/tvDate" />
 
         <Button
             android:id="@+id/detailsScreen"
@@ -205,10 +162,8 @@
             android:layout_marginTop="10dp"
             android:backgroundTint="#FF0000"
             android:text="view"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvPalyerMatch"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintStart_toStartOf="@+id/tvStatus"
+            app:layout_constraintTop_toBottomOf="@id/tvStatus" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
