@@ -35,6 +35,17 @@ class MatchAdapter(context: Context, val list: List<MatchDetailsData>, val click
             binding.tvTime.text = matchData.Matchdetail?.Match?.Time.toString()
             binding.tvMatch.text = matchData.Teams?.pak?.NameFull
             binding.tvTeam.text = matchData.Teams?.south_africa?.NameFull
+
+            if (matchData.Teams?.nz != null &&
+                matchData.Teams?.nz?.NameFull.toString().isNotEmpty()
+            ) {
+                binding.tvMatch.text = matchData.Teams?.nz?.NameFull
+
+                binding.tvTeam.text = matchData.Teams?.ind?.NameFull
+            } else {
+                binding.tvMatch.text = matchData.Teams?.pak?.NameFull
+                binding.tvTeam.text = matchData.Teams?.south_africa?.NameFull
+            }
             binding.saPakScore.text =
                 matchData.Innings.get(1).Total + "/" + matchData.Innings.get(1).Wickets + " ( " + matchData.Innings.get(
                     0
@@ -47,6 +58,7 @@ class MatchAdapter(context: Context, val list: List<MatchDetailsData>, val click
             binding.tvResult.text = matchData.Matchdetail?.Result
             binding.tvPalyerMatch.text = matchData.Matchdetail?.PlayerMatch
             binding.tvStatus.text = matchData.Matchdetail?.Status
+
 
             binding.detailsScreen.setOnClickListener {
                 click.onclick(matchData)

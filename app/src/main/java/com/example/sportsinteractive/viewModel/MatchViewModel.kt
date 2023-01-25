@@ -9,6 +9,7 @@ import kotlinx.coroutines.launch
 
 class MatchViewModel(private val repository: MatchRepository) :ViewModel(){
     val matchData = MutableLiveData<MatchDetailsData>()
+    val indVsNzDaa = MutableLiveData<MatchDetailsData>()
     val errorData = MutableLiveData<String>()
     fun getMatchData(){
         viewModelScope.launch{
@@ -22,4 +23,18 @@ class MatchViewModel(private val repository: MatchRepository) :ViewModel(){
             }
         }
     }
+    fun getIndVNz(){
+        viewModelScope.launch {
+            val response = repository.getIndVsNz()
+            if(response.isSuccessful){
+                indVsNzDaa.postValue(response.body())
+
+            }
+            else{
+                errorData.postValue(response.errorBody().toString())
+
+            }
+        }
+    }
+
 }

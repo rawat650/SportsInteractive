@@ -12,6 +12,8 @@ interface ApiService {
 
     @GET("sapk01222019186652.json")
     suspend fun getMatchData():Response<MatchDetailsData>
+    @GET("nzin01312019187360.json")
+    suspend fun getIndVsNz() : Response<MatchDetailsData>
 
 
     companion object {
