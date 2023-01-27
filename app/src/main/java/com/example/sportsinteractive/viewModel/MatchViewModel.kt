@@ -3,7 +3,7 @@ package com.example.sportsinteractive.viewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.sportsinteractive.pojo.MatchDetailsData
+import com.example.sportsinteractive.Models.MatchDetailsData
 import com.example.sportsinteractive.repository.MatchRepository
 import kotlinx.coroutines.launch
 

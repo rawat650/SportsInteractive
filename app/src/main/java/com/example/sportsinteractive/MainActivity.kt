@@ -6,14 +6,12 @@ import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.example.sportsinteractive.adapter.Click
 import com.example.sportsinteractive.adapter.MatchAdapter
 import com.example.sportsinteractive.api.ApiService
 import com.example.sportsinteractive.databinding.ActivityMainBinding
 import com.example.sportsinteractive.factory.MatchFactory
-import com.example.sportsinteractive.pojo.MatchDetailsData
-import com.example.sportsinteractive.pojo.Teams
+import com.example.sportsinteractive.Models.MatchDetailsData
 import com.example.sportsinteractive.repository.MatchRepository
 import com.example.sportsinteractive.viewModel.MatchViewModel
 

@@ -2,16 +2,12 @@ package com.example.sportsinteractive
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sportsinteractive.adapter.MatchDetailAdapter
 import com.example.sportsinteractive.databinding.ActivityDetailBinding
-import com.example.sportsinteractive.databinding.CustomAlertDialogBinding
-import com.example.sportsinteractive.pojo.PlayerDetail
+import com.example.sportsinteractive.Models.PlayerDetail
 //import com.example.sportsinteractive.pojo.Players
-import com.example.sportsinteractive.pojo.Teams
-import com.example.sportsinteractive.utils.Utils
-import com.google.gson.Gson
+import com.example.sportsinteractive.Models.Teams
 
 class DetailActivity : AppCompatActivity() {
     lateinit var binding: ActivityDetailBinding

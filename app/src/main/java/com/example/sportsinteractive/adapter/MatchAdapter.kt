@@ -2,13 +2,10 @@ package com.example.sportsinteractive.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sportsinteractive.R
 import com.example.sportsinteractive.databinding.MatchItemViewBinding
-import com.example.sportsinteractive.pojo.MatchDetailsData
+import com.example.sportsinteractive.Models.MatchDetailsData
 
 class MatchAdapter(context: Context, val list: List<MatchDetailsData>, val click: Click) :
     RecyclerView.Adapter<MatchAdapter.MatchViewHolder>() {

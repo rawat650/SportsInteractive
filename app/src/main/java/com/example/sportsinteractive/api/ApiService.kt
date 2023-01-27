@@ -1,7 +1,7 @@
 package com.example.sportsinteractive.api
 
 import com.example.sportsinteractive.constants.Constants
-import com.example.sportsinteractive.pojo.MatchDetailsData
+import com.example.sportsinteractive.Models.MatchDetailsData
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

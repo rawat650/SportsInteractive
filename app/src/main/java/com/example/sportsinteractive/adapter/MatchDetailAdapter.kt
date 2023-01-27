@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.sportsinteractive.R
 import com.example.sportsinteractive.databinding.MatchDetailItemListBinding
 
-import com.example.sportsinteractive.pojo.PlayerDetail
+import com.example.sportsinteractive.Models.PlayerDetail
 
 class MatchDetailAdapter(val context: Context, val playerDetailData: MutableList<PlayerDetail>) :
     RecyclerView.Adapter<MatchDetailAdapter.MatchDetailHolder>() {

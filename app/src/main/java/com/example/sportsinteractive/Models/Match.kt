@@ -1,4 +1,4 @@
-package com.example.sportsinteractive.pojo
+package com.example.sportsinteractive.Models
 
 import com.google.gson.annotations.SerializedName
 
