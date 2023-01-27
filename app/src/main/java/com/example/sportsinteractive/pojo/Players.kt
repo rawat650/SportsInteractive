@@ -2,8 +2,8 @@ package com.example.sportsinteractive.pojo
 
 import com.google.gson.annotations.SerializedName
 
-data class Players(@SerializedName("Players") val player: List<Map<String, PlayerDetail>>) :
-    java.io.Serializable
+//data class Players(@SerializedName("Players") val player: List<Map<String, PlayerDetail>>) :
+//    java.io.Serializable
 
 data class PlayerDetail(
     @SerializedName("Position") var Position: String? = null,

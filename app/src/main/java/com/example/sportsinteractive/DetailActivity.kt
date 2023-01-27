@@ -8,7 +8,7 @@ import com.example.sportsinteractive.adapter.MatchDetailAdapter
 import com.example.sportsinteractive.databinding.ActivityDetailBinding
 import com.example.sportsinteractive.databinding.CustomAlertDialogBinding
 import com.example.sportsinteractive.pojo.PlayerDetail
-import com.example.sportsinteractive.pojo.Players
+//import com.example.sportsinteractive.pojo.Players
 import com.example.sportsinteractive.pojo.Teams
 import com.example.sportsinteractive.utils.Utils
 import com.google.gson.Gson
