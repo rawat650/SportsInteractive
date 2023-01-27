@@ -2,10 +2,7 @@ package com.example.sportsinteractive.adapter
 
 import android.app.AlertDialog
 import android.content.Context
-import android.graphics.Color
-import android.text.Spannable
-import android.text.SpannableStringBuilder
-import android.text.style.ForegroundColorSpan
+
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
